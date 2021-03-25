@@ -4,7 +4,7 @@ Created on Wed Nov 4 11:48:39 2020
 
 @author: YOSO_WANHH
 '''
-'''
+
 import cmath
 
 a,b,c = input().split()
@@ -13,13 +13,18 @@ B = float(b)
 C = float(c)
 
 d = (B**2)- (4*A*C)
-
 sol1 = (-B-cmath.sqrt(d))/(2*A)
 sol2 = (-B+cmath.sqrt(d))/(2*A)
-print(sol1,sol2)
+if d > 0:
+    print("Two different roots x1=",sol1,"x2=",sol2)
+elif d < 0:
+    print("No real root")
+else:
+    
+    print("Two same roots x=", sol1)
+
+    
 '''
-
-
 import math
 def quadratic(a,b,c):
     p=b*b-4*a*c
@@ -37,5 +42,6 @@ a=float(input('Please input a='))
 b=float(input('Please input b='))
 c=float(input('Please input c='))
 print(quadratic(a,b,c))
+'''
 
 
