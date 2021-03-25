@@ -4,7 +4,7 @@ Created on Sat Nov 7 16:22:30 2020
 
 @author: YOSO_WANHH
 """
-
+''' #無法執行
 import sys
 mat = [[0] * 100 for i in range(100) ]   #宣告二維矩陣
 for line in sys.stdin:
@@ -19,9 +19,9 @@ for line in sys.stdin:
         for j in range(m):
             print(mat[j][i]," ",sep="",end="")
         print()
-
-
 '''
+
+
 while True :
     print('输入大小')
     a = input()#横
@@ -50,6 +50,6 @@ while True :
         for x in range(a) :
                 print(m2[x])
 
-'''        
+      
         
         
