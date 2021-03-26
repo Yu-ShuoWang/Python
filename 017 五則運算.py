@@ -11,7 +11,4 @@ while True:
  print(n)
  print(sn,'\n')
 '''
-import sys
-
-for s in sys.stdin:
-    print(eval(s.replace("/", "//")))
+print(eval(input()))
